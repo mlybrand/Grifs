@@ -12,4 +12,5 @@
 11. create github repository Grifs
 12. git remote add origin https://github.com/mlybrand/Grifs.git
 13. git push -u origin master
-14. 
+14. add index.html
+15. add bootstrap TODO
