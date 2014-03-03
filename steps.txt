@@ -1,0 +1,15 @@
+ 1. mkdir grifs
+ 2. cd grifs
+ 3. docpad run
+ 4. Select skeleton "No Skeleton"
+ 5. touch steps.txt [this file]
+ 6. touch .gitignore
+ 7. Edit the .gitignore file to have the following (because I am using PhpStorm):
+   .idea
+ 8. git init
+ 9. git add .
+10. git commit -m "Initial commit"
+11. create github repository Grifs
+12. git remote add origin https://github.com/mlybrand/Grifs.git
+13. git push -u origin master
+14. 
