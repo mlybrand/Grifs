@@ -13,4 +13,11 @@
 12. git remote add origin https://github.com/mlybrand/Grifs.git
 13. git push -u origin master
 14. add index.html
+15. download jquery and reference in page
 15. add bootstrap TODO
+
+download bootstrap
+reference bootstrap.min.css
+reference bootstrap.min.js
+download superhero
+rename css to superhero-bootstrap.min.css
