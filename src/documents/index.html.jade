@@ -3,9 +3,8 @@ html(lang="en")
     head
         meta(charset="utf-8")
         title Grif's Sealcoating
-        link(rel="stylesheet", href="vendor/bootstrap/css/bootstrap.min.css")
-        link(rel="stylesheet", href="vendor/bootstrap/css/yeti-bootstrap.min.css")
-        link(rel="stylesheet", href="css/style.css")
+        != getBlock("meta").toHTML()
+        != getBlock("styles").add(["vendor/bootstrap/css/bootstrap.min.css","vendor/bootstrap/css/yeti-bootstrap.min.css","css/style.css"]).toHTML()
     body
         header
             hgroup
@@ -17,6 +16,4 @@ html(lang="en")
             article some article
         footer yadda yadda yadda yadda
 
-        script(src="vendor/jquery-2.1.0.min.js")
-        script(src="vendor/bootstrap/js/bootstrap.min.js")
-        script(src="js/script.js")
+        != getBlock("scripts").add(["vendor/jquery-2.1.0.min.js","vendor/bootstrap/js/bootstrap.min.js","js/script.js"]).toHTML()
