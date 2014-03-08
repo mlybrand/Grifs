@@ -14,10 +14,8 @@
 13. git push -u origin master
 14. add index.html
 15. download jquery and reference in page
-15. add bootstrap TODO
-
-download bootstrap
-reference bootstrap.min.css
-reference bootstrap.min.js
-download superhero
-rename css to superhero-bootstrap.min.css
+16. download bootstrap
+17. reference bootstrap.min.css and bootstrap.min.js
+18. download superhero
+19. rename css to yeti-bootstrap.min.css
+20. reference yeti-bootstrap.min.css
