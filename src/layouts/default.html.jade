@@ -12,8 +12,6 @@ html(lang="en")
         nav
             ul
                 li: a(href="#") Home
-        section a section... maybe use...
-            article some article
+        !=content
         footer yadda yadda yadda yadda
-
         != getBlock("scripts").add(["vendor/jquery-2.1.0.min.js","vendor/bootstrap/js/bootstrap.min.js","js/script.js"]).toHTML()
