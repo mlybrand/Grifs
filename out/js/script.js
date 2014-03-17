@@ -1,5 +1,9 @@
-(function($) {
-    $(function() {
-        console.log("jquery");
-    });
-}(jQuery));
+(function() {
+
+  (function($) {
+    return $((function() {
+      return console.log("jquery with coffee");
+    })());
+  })(jQuery);
+
+}).call(this);
