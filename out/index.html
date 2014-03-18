@@ -9,21 +9,25 @@
 }</style><link  rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" /><link  rel="stylesheet" href="vendor/bootstrap/css/yeti-bootstrap.min.css" /><link  rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <hgroup>
-        <h1>Grif's Sealcoating</h1>
-      </hgroup>
+    <header class="container">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <hgroup class="navbar-header">
+          <h2>Grif's Sealcoating</h2>
+        </hgroup>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav"><a href="#">Home</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-      </ul>
-    </nav>
+    <section id="content" class="container">
 <section>We are the main page:</section>
 <section><p>a section from a template using markdown <em>really</em></p>
 
 </section>
-    <footer>yadda yadda yadda yadda</footer><script >(function(){
+    </section>
+    <footer class="container">Copyright and stuff</footer><script >(function(){
 	/* Did we just livereload? */
 var log = !!(localStorage && console && console.log && true);
 if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {

@@ -6,12 +6,14 @@ html(lang="en")
         != getBlock("meta").toHTML()
         != getBlock("styles").add(["vendor/bootstrap/css/bootstrap.min.css","vendor/bootstrap/css/yeti-bootstrap.min.css","css/style.css"]).toHTML()
     body
-        header
-            hgroup
-                h1 Grif's Sealcoating
-        nav
-            ul
-                li: a(href="#") Home
-        !=content
-        footer yadda yadda yadda yadda
+        header.container
+            .navbar.navbar-default.navbar-fixed-top
+                hgroup.navbar-header
+                    h2 Grif's Sealcoating
+                nav
+                    ul.nav.navbar-nav.navbar-right
+                        li.nav: a(href="#") Home
+        section#content.container
+            !=content
+        footer.container Copyright and stuff
         != getBlock("scripts").add(["vendor/jquery-2.1.0.min.js","vendor/bootstrap/js/bootstrap.min.js","js/script.js"]).toHTML()
