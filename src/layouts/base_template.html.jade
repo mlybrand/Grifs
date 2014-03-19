@@ -4,16 +4,22 @@ html(lang="en")
         meta(charset="utf-8")
         title Grif's Sealcoating
         != getBlock("meta").toHTML()
-        != getBlock("styles").add(["vendor/bootstrap/css/bootstrap.min.css","vendor/bootstrap/css/yeti-bootstrap.min.css","css/style.css"]).toHTML()
+        != getBlock("styles").add(["vendor/bootstrap/css/bootstrap.min.css","vendor/bootstrap/css/simplex-bootstrap.min.css","css/style.css"]).toHTML()
     body
         header.container
             .navbar.navbar-default.navbar-fixed-top
                 hgroup.navbar-header
-                    h2 Grif's Sealcoating
+                    img#logo(src="images/grifslogo.png" alt="Grif's Sealcoating")
                 nav
                     ul.nav.navbar-nav.navbar-right
                         li.nav: a(href="#") Home
+                        li.nav: a(href="#") Services
+                        li.nav: a(href="#") Free Quote
+                        li.nav: a(herf="#") Clients
+                        li.nav: a(href="#") Gallery
+                        li.nav: a(href="#") About
+
         section#content.container
             !=content
-        footer.container Copyright and stuff
+        footer.container.navbar-fixed-bottom Copyright and stuff
         != getBlock("scripts").add(["vendor/jquery-2.1.0.min.js","vendor/bootstrap/js/bootstrap.min.js","js/script.js"]).toHTML()

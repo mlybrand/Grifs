@@ -2,6 +2,19 @@ body {
     margin-top: 75px;
 }
 
-.navbar {
-    color: white;
+.navbar-fixed-bottom {
+    background-color: #fff;
+    border-top: solid #eee 1px;
+    border-left: solid #eee 1px;
+    border-right: solid #eee 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
+#logo {
+    margin-left: 15px;
 }
