@@ -1,0 +1,2 @@
+add all pages and their templates updating nav to get to them
+configure system to indicate active page
