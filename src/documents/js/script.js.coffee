@@ -1,5 +1,5 @@
 (($) ->
   $(do ->
-    console.log "jquery with coffee"
+    console.log("jquery via coffee")
   )
 ) jQuery

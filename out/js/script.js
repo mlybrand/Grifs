@@ -2,7 +2,7 @@
 
   (function($) {
     return $((function() {
-      return console.log("jquery with coffee");
+      return console.log("jquery via coffee");
     })());
   })(jQuery);
 

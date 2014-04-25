@@ -12,14 +12,13 @@ html(lang="en")
                     img#logo(src="images/grifslogo.png" alt="Grif's Sealcoating")
                 nav
                     ul.nav.navbar-nav.navbar-right
-                        li.nav: a(href="#") Home
-                        li.nav: a(href="#") Services
-                        li.nav: a(href="#") Free Quote
-                        li.nav: a(herf="#") Clients
-                        li.nav: a(href="#") Gallery
-                        li.nav: a(href="#") About
-
-        section#content.container
+                        li.nav: a(href="index.html") Home
+                        li.nav: a(href="services.html") Services
+                        li.nav: a(href="quote.html") Free Quote
+                        li.nav: a(href="clients.html") Clients
+                        li.nav: a(href="gallery.html") Gallery
+                        li.nav: a(href="about.html") About
+         section#content.container
             !=content
         footer.container.navbar-fixed-bottom Copyright and stuff
         != getBlock("scripts").add(["vendor/jquery-2.1.0.min.js","vendor/bootstrap/js/bootstrap.min.js","js/script.js"]).toHTML()
