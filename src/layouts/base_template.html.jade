@@ -5,7 +5,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
         title Grif's Sealcoating
         != getBlock("meta").toHTML()
-        != getBlock("styles").add(["vendor/bootstrap/css/bootstrap.min.css","vendor/bootstrap/css/simplex-bootstrap.min.css","css/style.css"]).toHTML()
+        != getBlock("styles").add(["vendor/bootstrap/css/bootstrap.min.css","vendor/bootstrap/css/yeti-bootstrap.min.css","css/style.css"]).toHTML()
     body
         header.container
             .navbar.navbar-default.navbar-fixed-top
@@ -13,12 +13,12 @@ html(lang="en")
                     img#logo(src="images/grifslogo.png" alt="Grif's Sealcoating")
                 nav
                     ul.nav.navbar-nav.navbar-right
-                        li.nav: a(href="index.html") Home
-                        li.nav: a(href="services.html") Services
-                        li.nav: a(href="quote.html") Free Quote
-                        li.nav: a(href="clients.html") Clients
-                        li.nav: a(href="gallery.html") Gallery
-                        li.nav: a(href="about.html") About
+                        li.nav(class="#{ document.outFilename === 'index.html' ? 'active' : 'inactive' }"): a(href="index.html") Home
+                        li.nav(class="#{ document.outFilename === 'services.html' ? 'active' : 'inactive' }"): a(href="services.html") Services
+                        li.nav(class="#{ document.outFilename === 'quote.html' ? 'active' : 'inactive' }"): a(href="quote.html") Free Quote
+                        li.nav(class="#{ document.outFilename === 'clients.html' ? 'active' : 'inactive' }"): a(href="clients.html") Clients
+                        li.nav(class="#{ document.outFilename === 'gallery.html' ? 'active' : 'inactive' }"): a(href="gallery.html") Gallery
+                        li.nav(class="#{ document.outFilename === 'about.html' ? 'active' : 'inactive' }"): a(href="about.html") About
          section#content.container
             !=content
         footer.container.navbar-fixed-bottom Copyright and stuff
